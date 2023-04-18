@@ -1,7 +1,21 @@
-import { type } from "os"
 
-export type Weather = "sunny" | "rainy" | "cloudy" | "windy" | "stormy"
-export type Visibility = "great" | "bad" | "poor"
+//export type Weather = "sunny" | "rainy" | "cloudy" | "windy" | "stormy"
+//export type Visibility = "great" | "bad" | "poor"
+
+export enum Weather {
+    Sunny = "sunny",
+    Rainy = "rainy",
+    Cloudy = "cloudy",
+    Windy = "windy",
+    Stormy = "stormy"
+}
+
+export enum Visibility {
+    Great = "great",
+    Bad = "bad",
+    Poor = "poor"
+}
+
 
 export interface DiaryEntry {
     id: number,
